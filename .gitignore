@@ -112,3 +112,6 @@ InitTestScene*.unity*
 
 # Auto-generated cache in Assets folder
 /[Aa]ssets/[Ss]ceneDependencyCache*
+/[Aa]ssets/craftpix-net-281031-free-1-bit-sky-and-clouds-pixel-backgrounds/**
+/[Aa]ssets/craftpix-net-788364-free-slime-mobs-pixel-art-top-down-sprite-pack/**
+
