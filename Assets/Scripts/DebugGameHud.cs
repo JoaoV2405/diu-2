@@ -62,7 +62,7 @@ public sealed class DebugGameHud : MonoBehaviour
 
         Vector3 screenPosition = gameplayCamera.WorldToScreenPoint(player.transform.position);
         GUI.Label(
-            new Rect(screenPosition.x - 40f, Screen.height - screenPosition.y - 42f, 120f, 24f),
+            new Rect(screenPosition.x - 40f, Screen.height - screenPosition.y - 42f, 180f, 54f),
             $"HP {player.CurrentHealth}/{player.MaxHealth}");
     }
 }

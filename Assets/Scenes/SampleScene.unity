@@ -1245,7 +1245,7 @@ SpriteRenderer:
   m_SortingOrder: -10
   m_MaskInteraction: 0
   m_Sprite: {fileID: 6937817954938267909, guid: cb31c9f34e02d55498b505ce423c7449, type: 3}
-  m_Color: {r: 0.7283019, g: 0.7283019, b: 0.7283019, a: 1}
+  m_Color: {r: 0.2603773, g: 0.2603773, b: 0.2603773, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1875,9 +1875,9 @@ MonoBehaviour:
   arena: {fileID: 12389555}
   spawnPoints: []
   initialDelay: 3
-  initialSpawnInterval: 5
-  minimumSpawnInterval: 1.5
-  difficultyStepSeconds: 20
+  initialSpawnInterval: 3.11
+  minimumSpawnInterval: 1.04
+  difficultyStepSeconds: 16.4
   intervalReductionPerStep: 0.5
   startingMaxAlive: 2
   additionalMaxAlivePerStep: 1
@@ -2493,8 +2493,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e766d039628520c45a1c29c06466287f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BallController
-  baseSpeed: 8.07
-  maxSpeed: 20.3
+  baseSpeed: 10.68
+  maxSpeed: 30.3
   initialDirection: {x: 0.3, y: 0.6}
   redirectCooldown: 0.1
   damage: 1
@@ -2655,7 +2655,7 @@ SpriteRenderer:
   m_SortingOrder: -9
   m_MaskInteraction: 0
   m_Sprite: {fileID: 3465286685962602723, guid: e4aaf166794d6f240b0688667d24c29b, type: 3}
-  m_Color: {r: 0.5622641, g: 0.5622641, b: 0.5622641, a: 1}
+  m_Color: {r: 0.2528302, g: 0.2528302, b: 0.2528302, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2851,6 +2851,56 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!21 &2082544293
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Sprite-Lit-Default (Instance)
+  m_Shader: {fileID: 4800000, guid: e260cfa7296ee7642b167f1eb5be5023, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MaskTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _EnableExternalAlpha: 0
+    - _ZWrite: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1
 --- !u!1 &2117746059
 GameObject:
   m_ObjectHideFlags: 0
@@ -2878,8 +2928,8 @@ Transform:
   m_GameObject: {fileID: 2117746059}
   serializedVersion: 2
   m_LocalRotation: {x: 0.0018523709, y: 0.017470116, z: 0.105423495, w: 0.99427223}
-  m_LocalPosition: {x: -0.01, y: 0.44, z: -0}
-  m_LocalScale: {x: 0.7700966, y: 0.48875576, z: 1}
+  m_LocalPosition: {x: 0.08, y: 0.57, z: -0.016}
+  m_LocalScale: {x: 4.5978165, y: 3.0583136, z: 1.2121}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 216547152}
@@ -2910,7 +2960,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2082544293}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2933,12 +2983,12 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7773031391787181946, guid: 699b9e4c2a168394eae31729259dd6d3, type: 3}
+  m_Sprite: {fileID: -1924591734268745998, guid: dec6bbe87846d164f9130b2e50bf8413, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.375, y: 0.375}
+  m_Size: {x: 0.36, y: 0.08}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
